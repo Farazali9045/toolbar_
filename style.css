@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.bg{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f1f9;
+    padding: 0px 15px;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 420px;
+    height: 55px;
+    background-color: #ffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    padding: 0px 12px;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+   
+}
+
+
+i{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease;
+}
+i:hover{
+    background-color: #ECE8F9;
+
+}
+
+.userProfile{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    background: url('WhatsApp\ Image\ 2024-03-31\ at\ 14.19.32.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.appIntegration{
+    position: relative;
+}
+.dropDown{
+    position: absolute;
+    top: 65px;
+    right: -2px;
+    height: 200px;
+    width: 180px;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0px 5px;
+    display: none;
+}
+.changeDisplay{
+    
+    display: block;
+    
+}
+.heading{
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+}
+.dropDownApp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+   height: 160px;
+   width: 100%;
+   overflow-y: scroll;
+  
+   
+}
+.icon i{
+
+    font-size: 25px;
+    font-weight: 400;
+   
+  
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: #a4a4a4; 
+    border-radius: 5px; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #000; 
+  }
+  
+  @media (max-width:480px){
+    .bar{
+        height: 48px;
+    }
+    i{
+        font-size: 24px;
+        padding: 8px;
+    }
+    .userProfile{
+        height: 30px;
+        width: 30px;
+    }
+    .dropDown{
+        height: 180px;
+        width: 160px;
+    }
+    .heading{
+        font-size: 14px;
+    }
+    .dropDownApp{
+        height: 140px;
+    }
+   
+    .icon i{
+        font-size: 21px;
+    }
+  }
